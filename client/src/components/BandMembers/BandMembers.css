@@ -1,0 +1,13 @@
+@media (max-width: 1000px) {
+  .css-5lnbq0 {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+  }
+  .css-vt7rl0-MuiPaper-root-MuiCard-root {
+    width: 90% !important;
+  }
+  .css-1qljhi3-MuiCardMedia-root {
+    height: 370px !important;
+  }
+}

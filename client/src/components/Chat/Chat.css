@@ -1,0 +1,70 @@
+@media (min-width: 800px) {
+
+  .conversation-list__item {
+    padding-right: 100px;
+  }
+
+  .conversation-list__date {
+    display: block;
+  }
+
+  .chat-container {
+    background: url("/messages.gif") center center no-repeat !important;
+    background-size: contain !important;
+
+  }
+}
+
+.limit--s {
+  max-width: 600px;
+}
+
+textarea {
+  resize: none
+}
+
+.conversation-list__item {
+  display: block;
+  margin-top: 20px;
+  border-radius: 4px;
+  position: relative;
+  background: #282828;
+  padding-right: 20px;
+}
+
+.conversation-list__body {
+  display: flex;
+}
+
+.conversation-list__image {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.conversation-list__info {
+  padding-top: 16px;
+  overflow: hidden;
+}
+
+.conversation-list__name,
+.conversation-list__preview {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.conversation-list__date {
+  position: absolute;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8c8c8c;
+  right: 20px;
+  top: 31px;
+}

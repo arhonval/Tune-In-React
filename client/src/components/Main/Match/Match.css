@@ -1,0 +1,172 @@
+.section--match .listing {
+  position: relative;
+}
+
+.section--match .listing__item {
+  position: relative;
+}
+
+.listing__item {
+  margin-top: 30px;
+  flex-basis: 25%;
+  max-width: 25%;
+  padding: 0 10px;
+  transition: all 0.5s;
+}
+
+.listing__item:hover {
+  transform: scale(1.1);
+}
+
+
+.section--match {
+  padding: 60px 0;
+  /* margin-bottom: 40px; */
+}
+
+.section--match p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #8c8c8c;
+  margin: 10px 0 0 0;
+}
+
+.section--match .floating-profiles {
+  margin-top: 40px;
+}
+
+.listing {
+  margin-top: -30px;
+}
+
+.listing {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-top: -20px;
+  min-height: 30px;
+}
+
+.listing__image {
+  height: 0;
+  padding-top: 100%;
+  background-size: cover;
+  position: relative;
+  border-radius: 4px;
+}
+
+
+.listing__info {
+  padding: 10px 0 0;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  display: flex;
+}
+
+.listing__text {
+  min-width: 0;
+}
+
+.listing__meta {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8c8c8c;
+}
+
+@media (max-width: 800px) {
+  .listing__item {
+    flex-basis: 33.3333333333%;
+    max-width: 33.3333333333%;
+    padding: 0 10px;
+  }
+
+  .listing__item {
+    padding: 0 15px;
+  }
+
+  .listing {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -10px;
+    margin-left: -10px;
+    margin-top: -20px;
+    min-height: 30px;
+  }
+
+  .listing__item {
+    margin-top: 20px;
+    background: transparent;
+    flex-basis: 10%;
+    max-width: 50%;
+    padding: 0 10px;
+    transition: all 0.5s;
+  }
+
+  .listing__item:hover {
+    transform: scale(1.1);
+  }
+
+
+  .listing__image {
+    height: 40vw;
+    width: 40vw;
+    padding-top: 100%;
+    background-size: cover;
+    position: relative;
+    border-radius: 4px;
+
+  }
+
+}
+
+@media (min-width: 800px) {
+
+  .section--match {
+    background: url("/blurred-profiles-94d1d7c2a868c2b0d911068479f2f763a281cfcf3a80d3da5ead8f2b8107812f.gif") center center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 80px 0;
+    backdrop-filter: blur(666px);
+  }
+
+  .section--match h2 {
+    font-size: 50px;
+  }
+
+  .section--match .floating-profiles {
+    margin-top: 80px;
+    min-height: 720px;
+  }
+
+  .listing {
+    margin-top: -30px;
+    margin-right: -15px;
+    margin-left: -15px;
+
+  }
+
+  .section--match .listing__item:nth-child(1) {
+    top: 100px;
+  }
+
+  .section--match .listing__item:nth-child(2) {
+    top: 450px;
+  }
+
+  .section--match .listing__item:nth-child(3) {
+    top: 0;
+  }
+
+  .section--match .listing__item:nth-child(4) {
+    display: block;
+    top: 380px;
+
+  }
+}

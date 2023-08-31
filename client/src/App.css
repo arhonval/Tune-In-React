@@ -1,0 +1,78 @@
+@media (min-width: 800px) {
+
+  .contain {
+    margin: 0 30px;
+  }
+}
+
+.menu li a:hover,
+.footer a:hover,
+.desktop-nav a:hover,
+.user-nav__icon:hover {
+  color: #8f12ff
+}
+
+.contain {
+  margin: 0 20px;
+}
+
+.limit--m {
+  max-width: 1040px;
+}
+
+.limit {
+  margin: 0 auto;
+}
+
+.css-12knogy {
+  padding-bottom: 160px;
+}
+
+.css-dvxtzn {
+
+  position: relative;
+  background-size: 90% !important;
+  /* padding-top: 100px; */
+}
+
+.back-url {
+  display: none;
+  top: 0;
+  left: 38%;
+  height: 25vh !important;
+  position: absolute;
+}
+
+.back-url img {
+  height: 100%;
+}
+
+@media(min-width: 800px) {
+
+  .css-pqi8h6 {
+    background: url("/pointer.gif") top no-repeat !important;
+    background-size: 90% !important;
+  }
+
+  .css-pqi8h6 h4 {
+    font-family: 'Pangolin', cursive !important;
+    color: #dcdcdc !important;
+  }
+
+  .back-url {
+    top: 40px;
+    left: 38%;
+    height: 25vh !important;
+    position: absolute;
+    display: block;
+  }
+
+  .back-url img {
+    height: 100%;
+  }
+
+  .css-dvxtzn {
+
+    padding-top: 130px;
+  }
+}

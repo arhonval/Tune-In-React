@@ -1,0 +1,293 @@
+.section--intro {
+  padding: 40px 0 160px 0;
+  text-align: center;
+  color: white;
+}
+
+
+
+.section--intro .logo,
+.section--intro .logo svg {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.section--intro .logo {
+  margin: 0 auto;
+  color: #8f12ff;
+  height: 120px;
+  width: 65%;
+}
+
+.section--intro h1 {
+  width: 100%;
+  margin: 20px 0;
+  color: #ffffff;
+  line-height: 1.15;
+  font-size: 36px;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 0;
+}
+
+.form {
+  margin-top: -20px;
+}
+
+.cta__inner {
+  font-size: 18px;
+  line-height: 1.5;
+  overflow: hidden;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+}
+
+.cta__select {
+  width: 280px;
+}
+
+.form .select {
+  position: relative;
+  display: block;
+}
+
+.cta .select select {
+  height: 58px;
+  font-size: 18px;
+  line-height: 1.5;
+  padding-left: 1em;
+}
+
+.form .select select {
+  height: 40px;
+  padding-right: 2em;
+  background: none;
+  border: 1px solid #414141;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form .select select {
+  width: 100%;
+  margin: 0;
+  outline: none;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+.form .select::after {
+  display: block;
+}
+
+.form .select::after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 1em;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #ffffff;
+  pointer-events: none;
+}
+
+.cta .select option {
+  font-size: 10px;
+}
+
+.form .select option {
+  color: #ffffff;
+  background: #282828;
+  border-color: #8f12ff;
+  font-size: 16px;
+  outline: none;
+}
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space-collapse: collapse;
+  text-wrap: nowrap;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.cta__submit {
+  width: 280px;
+  margin: 20px auto 0;
+}
+
+.cta button {
+  padding: 0;
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  line-height: 1.5;
+  background: #8f12ff;
+  border-radius: 4px;
+
+}
+
+.cta button:hover {
+  background: #7b10d9;
+}
+
+.cta__select,
+.cta__submit {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .section--intro {
+    padding: 40px 0 180px 0;
+  }
+
+  .section--intro h1 {
+    font-size: 60px;
+  }
+
+  .cta {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .cta__inner {
+    margin: 0 auto;
+
+  }
+
+  .section--intro .logo {
+    width: 30%;
+  }
+
+  .cta__select,
+  .cta__submit {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  .cta__select {
+    width: 240px;
+    margin: 0 10px;
+  }
+
+  .cta__submit {
+    width: 140px;
+    margin: 0 10px;
+  }
+
+  .form .select::after {
+    display: block;
+  }
+
+}
+
+/* ---------------------- */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.muzieknootjes {
+  display: block;
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4,
+.noot-5,
+.noot-6 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.noot-1 {
+  bottom: -90%;
+  left: 5%;
+  animation-delay: 0.5s;
+}
+
+.noot-2 {
+  top: 30%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.noot-3 {
+  bottom: -150%;
+  left: 30%;
+  animation-delay: 1.5s;
+}
+
+.noot-4 {
+  top: 30%;
+  left: 65%;
+  animation-delay: 3s;
+}
+
+.noot-5 {
+  bottom: -150%;
+  left: 65%;
+  animation-delay: 2.5s;
+}
+
+.noot-6 {
+  top: 90%;
+  right: 20%;
+  animation-delay: 3.5s;
+}
+
+@keyframes notes {
+  0% {
+    color: #A0D468;
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+
+  50% {
+    color: #4FC1E9;
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+
+  80% {
+    color: #FFCE54;
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+
+  100% {
+    color: #FC6E51;
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}

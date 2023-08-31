@@ -1,0 +1,306 @@
+.row .col:first-child {
+  margin-top: 0;
+}
+
+.card__meta>div:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+.card__meta {
+  padding: 20px;
+}
+
+.row .col {
+  margin-top: 20px;
+}
+
+.card {
+  background: #282828;
+  overflow: hidden;
+  margin: 0 -20px;
+}
+
+.card__meta>div {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #414141;
+}
+
+.card__meta h3 {
+  color: #8c8c8c;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.card__body {
+  border-top: 1px solid #414141;
+  padding: 1em 0;
+  margin: 0 20px;
+}
+
+.card__body div {
+  overflow-wrap: break-word;
+}
+
+.col--two-thirds {
+  flex-basis: 66.6666666667%;
+
+  padding: 0 5%;
+}
+
+.btn {
+  width: auto;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  background: #8f12ff;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #720fc9;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.sidebar__avatar {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin-right: 15px;
+}
+
+.sidebar__user {
+  display: flex;
+}
+
+.hero-text h2 {
+  color: #dcdcdc !important;
+}
+
+@media (min-width: 600px) {
+  .card__meta {
+    display: flex;
+  }
+
+  .card__meta>div:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .card__meta>div {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+    margin-right: 30px;
+    padding-left: 30px;
+    border-left: 1px solid #414141;
+  }
+}
+
+@media (min-width: 800px) {
+  .hero-text {
+    background: url("/pointer.gif") center center no-repeat;
+    background-size: 75%;
+  }
+
+  .row .col {
+    margin-top: 0;
+  }
+
+  .col--two-thirds {
+    padding: 0 15px;
+  }
+
+  .col--two-thirds {
+    flex-basis: 66.6666666667%;
+
+    padding: 0 5%;
+  }
+
+  .card {
+    border-radius: 4px;
+    margin: 0 auto;
+  }
+
+  .card__meta {
+    padding: 30px;
+  }
+
+  .card__body {
+    margin: 0 30px;
+  }
+}
+
+.err {
+  color: rgb(255, 81, 81);
+  display: none;
+  font-size: 20px;
+}
+
+.err.status {
+  display: block;
+}
+
+.edit {
+  display: none !important;
+}
+
+.ad-item .btn-container {
+  display: flex;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-top: 1px solid #8f12ff;
+  /* background-color: rgb(44, 44, 44); */
+}
+
+.btn-container .btn {
+  margin: 0;
+
+}
+
+.danger {
+  background-color: #ff1251;
+  margin-left: 20px !important;
+  transition: all 0.3s;
+}
+
+.danger:hover {
+  background-color: #ff1251b7;
+}
+
+/* ------------------- */
+#equalizer {
+  margin: 26px 20px;
+  height: 46px;
+  width: 80px;
+  /* generates a random number in the range 430 - 500*/
+  /* adds random animation durations to for up 20 bars;
+  for more, change 20 to a higer value (below) */
+}
+
+#equalizer .bar {
+  position: relative;
+  float: left;
+  background-color: #8f12ff;
+  height: 10px;
+  margin-left: 1px;
+  width: 3px;
+  animation: jump 0ms -800ms linear infinite alternate;
+}
+
+@keyframes jump {
+  0% {
+    height: 10px;
+    top: -5px;
+  }
+
+  100% {
+    top: -15px;
+    height: 30px;
+  }
+}
+
+#equalizer .bar:nth-child(1) {
+  animation-duration: 466ms;
+}
+
+#equalizer .bar:nth-child(2) {
+  animation-duration: 489ms;
+}
+
+#equalizer .bar:nth-child(3) {
+  animation-duration: 492ms;
+}
+
+#equalizer .bar:nth-child(4) {
+  animation-duration: 439ms;
+}
+
+#equalizer .bar:nth-child(5) {
+  animation-duration: 456ms;
+}
+
+#equalizer .bar:nth-child(6) {
+  animation-duration: 484ms;
+}
+
+#equalizer .bar:nth-child(7) {
+  animation-duration: 472ms;
+}
+
+#equalizer .bar:nth-child(8) {
+  animation-duration: 441ms;
+}
+
+#equalizer .bar:nth-child(9) {
+  animation-duration: 439ms;
+}
+
+#equalizer .bar:nth-child(10) {
+  animation-duration: 474ms;
+}
+
+#equalizer .bar:nth-child(11) {
+  animation-duration: 497ms;
+}
+
+#equalizer .bar:nth-child(12) {
+  animation-duration: 460ms;
+}
+
+#equalizer .bar:nth-child(13) {
+  animation-duration: 448ms;
+}
+
+#equalizer .bar:nth-child(14) {
+  animation-duration: 488ms;
+}
+
+#equalizer .bar:nth-child(15) {
+  animation-duration: 469ms;
+}
+
+#equalizer .bar:nth-child(16) {
+  animation-duration: 470ms;
+}
+
+#equalizer .bar:nth-child(17) {
+  animation-duration: 452ms;
+}
+
+#equalizer .bar:nth-child(18) {
+  animation-duration: 476ms;
+}
+
+#equalizer .bar:nth-child(19) {
+  animation-duration: 498ms;
+}
+
+#equalizer .bar:nth-child(20) {
+  animation-duration: 493ms;
+}
+
+#equalizer.paused .bar {
+  animation-play-state: paused;
+}

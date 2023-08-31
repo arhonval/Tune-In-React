@@ -1,0 +1,209 @@
+.section--convo-heads,
+.conversations-index .section--convo-heads,
+.conversations-show .section--convo-heads {
+  text-align: center;
+
+}
+
+.padding-vert-l {
+  padding: 40px 0;
+}
+
+.convo-heads {
+  width: 180px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.messages-new .convo-heads__item:nth-child(1),
+.conversations-index .convo-heads__item:nth-child(1),
+.conversations-show .convo-heads__item:nth-child(1) {
+  left: 0;
+}
+
+.convo-heads__item {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  overflow: hidden;
+}
+
+.convo-heads__item:nth-child(2),
+.conversations-index .convo-heads__item:nth-child(2),
+.conversations-show .convo-heads__item:nth-child(2) {
+  right: 0;
+}
+
+.convo-heads__item img {
+  display: block;
+  max-width: 100%;
+}
+
+.section--convo-heads h1 {
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+
+.limit--s {
+  max-width: 600px;
+}
+
+.limit {
+  margin: 0 auto;
+}
+
+.messages-new .convo-scroller,
+.conversations-index .convo-scroller,
+.conversations-show .convo-scroller {
+  max-height: 350px;
+  overflow: auto;
+}
+
+.conversation {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.conversation li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.conversation li:first-child .timestamp {
+  margin-top: 0;
+}
+
+.message.yours {
+  float: right;
+  text-align: right;
+  margin-right: 12px;
+  margin-left: 0;
+  background: #8f12ff;
+  color: #fff;
+  position: relative;
+  top: 0;
+  clear: both;
+  margin-top: 20px;
+  padding: 10px 15px 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.conversation .message {
+  max-width: 80%;
+}
+
+.message.theirs {
+  float: left;
+  text-align: left;
+  margin-right: 12px;
+  margin-left: 0;
+  background: #8f12ff;
+  color: #fff;
+  position: relative;
+  top: 0;
+  clear: both;
+  margin-top: 20px;
+  padding: 10px 15px 10px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 20px;
+  word-wrap: break-word;
+  color: black !important;
+  background: #ffffff;
+}
+
+.convo-scroller {
+  min-height: 500px;
+  overflow: auto;
+}
+
+.conversation .message.yours:before {
+  right: -12px;
+  height: 0;
+  width: 0;
+  border-top: 13px solid #8f12ff;
+  border-right: 13px solid transparent;
+}
+
+.conversation .message:before {
+  content: " ";
+  position: absolute;
+  bottom: 9px;
+}
+
+/* .messages-new .convo-form,
+.conversations-index .convo-form,
+.conversations-show  */
+.convo-form {
+  margin-top: 20px;
+  padding-bottom: 70%;
+}
+
+.form__row {
+  margin-left: -20px;
+  *zoom: 1;
+}
+
+.form__row:before,
+.form__row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.form__col {
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.convo-form textarea {
+  height: 140px;
+  background-color: rgb(34, 34, 34);
+}
+
+.timestamp {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  color: #8c8c8c;
+}
+
+.convo-scroller {
+  max-height: 350px;
+  overflow: auto;
+}
+
+@media (min-width: 800px) {
+  .padding-vert-l {
+    padding: 80px 0;
+  }
+
+  .contain {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 700px) {
+  .convo-scroller {
+    max-height: 500px;
+  }
+}
+
+.form__row .form__col:last-child {}

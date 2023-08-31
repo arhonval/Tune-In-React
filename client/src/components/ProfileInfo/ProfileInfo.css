@@ -1,0 +1,28 @@
+.profile__social {
+  line-height: 1;
+  margin-top: 2%;
+  width: 55%;
+}
+
+.profile__social ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.profile__social li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.rhap_main-controls-button,
+.rhap_volume-button, .rhap_time, .rhap_repeat-button {
+  color: black;
+}
+
+.rhap_progress-indicator {
+    background-color: black;
+}
