@@ -11,5 +11,6 @@
 # Запуск приложения
 ## client
  В терминале в папке client: npm run dev
+ Запускается приложение по пути http://localhost:5173
 ## server
  В терминале в папке server: npm run dev
